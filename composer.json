@@ -1,11 +1,12 @@
 {
-    "name": "asantibanez/livewire-charts",
-    "description": "Livewire Charts",
+    "name": "rishadblack/livewire-charts",
+    "description": "Livewire Charts (fork of asantibanez/livewire-charts with Laravel 13 and Livewire 4 support)",
     "keywords": [
         "asantibanez",
-        "livewire-charts"
+        "livewire-charts",
+        "rishadblack"
     ],
-    "homepage": "https://github.com/asantibanez/livewire-charts",
+    "homepage": "https://github.com/rishadblack/livewire-charts",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -13,16 +14,23 @@
             "name": "Andrés Santibáñez",
             "email": "santibanez.andres@gmail.com",
             "role": "Developer"
+        },
+        {
+            "name": "S M Rishad",
+            "role": "Developer"
         }
     ],
     "require": {
-        "php": "^7.2|^7.3|^7.4|^8.0|^8.1|^8.2|^8.3",
-        "illuminate/support": "^7.0|^8.0|^9.0|^10.0|^11.0|^12.0",
-        "livewire/livewire": "^3.0"
+        "php": "^8.1",
+        "illuminate/support": "^10.0|^11.0|^12.0|^13.0",
+        "livewire/livewire": "^3.0|^4.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^5.0|^6.0|^7.0|^8.0|^9.0|^10.0",
-        "phpunit/phpunit": "^8.0|^9.5.10|^10.5|^11.0"
+        "orchestra/testbench": "^8.0|^9.0|^10.0|^11.0",
+        "phpunit/phpunit": "^10.5|^11.0|^12.0"
+    },
+    "replace": {
+        "asantibanez/livewire-charts": "self.version"
     },
     "autoload": {
         "psr-4": {
@@ -47,7 +55,7 @@
                 "Asantibanez\\LivewireCharts\\LivewireChartsServiceProvider"
             ],
             "aliases": {
-                "LivewireCharts": "Asantibanez\\LivewireCharts\\LivewireChartsFacade"
+                "LivewireCharts": "Asantibanez\\LivewireCharts\\Facades\\LivewireCharts"
             }
         }
     },
